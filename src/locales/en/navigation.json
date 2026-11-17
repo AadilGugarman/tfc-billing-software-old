@@ -1,0 +1,14 @@
+{
+  "dashboard": "Dashboard",
+  "vehicleRegister": "Vehicle Arrival Register",
+  "vehicleArrivalRegister": "Vehicle Arrival Register",
+  "parties": "Parties",
+  "transactions": "Sales",
+  "purchases": "Purchases",
+  "aavakRegister": "Aavak Register",
+  "inventory": "Inventory",
+  "payments": "Payments",
+  "billing": "Billing",
+  "reports": "Reports",
+  "settings": "Settings"
+}

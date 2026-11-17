@@ -1,0 +1,30 @@
+[package]
+name = "fruit_market_erp"
+version = "0.1.0"
+description = "Fruit Market Commission ERP"
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2.6.1", features = [] }
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+dirs = "6"
+rusqlite = { version = "0.32", features = ["bundled", "backup"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2.6.1", features = [] }
+zip = { version = "2", default-features = false, features = ["deflate"] }
+jsonwebtoken = "9"
+argon2 = "0.5"
+bcrypt = "0.15"
+rand = "0.8"
+password-hash = { version = "0.5", features = ["rand_core"] }
+rand_core = { version = "0.6", features = ["getrandom"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+hmac = "0.12"
+sha2 = "0.10"
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
